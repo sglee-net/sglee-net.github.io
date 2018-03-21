@@ -1,8 +1,25 @@
 #### Command
 
-replacement
+[replacement]
 :%s/src/target/c (confirm)
 :%s/src/target/g (global)
 
-undo : u
-redo : ctrl + R
+[undo]
+u
+
+[redo]
+ctrl + R
+
+[comment]
+Visual Block (Shift + V)
+:
+:'<, '> (auto)
+:'<, '> norm i // (or #)
+
+[uncomment]
+Visual Block (Shift + V)
+:
+:'<, '> (auto)
+:'<, '> norm 2# (#: 1 for //, 2 for #, # means the the number of character to be removed)
+
+
