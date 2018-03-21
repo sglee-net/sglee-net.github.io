@@ -1,6 +1,8 @@
-* replacement
+#### Command
+
+replacement
 $ :%s/src/target/c (confirm)
 $ :%s/src/target/g (global)
 
-* undo : u
-* redo : ctrl + R
+undo : u
+redo : ctrl + R
