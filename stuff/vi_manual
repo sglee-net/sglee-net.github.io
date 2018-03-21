@@ -1,8 +1,8 @@
 #### Command
 
 replacement
-$ :%s/src/target/c (confirm)
-$ :%s/src/target/g (global)
+:%s/src/target/c (confirm)
+:%s/src/target/g (global)
 
 undo : u
 redo : ctrl + R
