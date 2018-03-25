@@ -28,3 +28,19 @@ Visual Block (Shift + V)
 [paste buffer to the next of the specific line(#)]
 :#pu
 
+[move to the next word]
+w
+
+[move to the previous word]
+b
+
+[move to the next word (space)]
+W
+
+[move to the previous word (space)]
+B
+
+[delete the word]
+v => w => d or x
+
+
