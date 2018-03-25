@@ -3,6 +3,7 @@
 [replacement]
 :%s/src/target/c (confirm)
 :%s/src/target/g (global)
+:#,#s/src/target (line to line)
 
 [undo]
 u
