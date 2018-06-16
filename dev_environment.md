@@ -105,7 +105,7 @@
     ```
     
 #### Update Source
-    - Centos: .bash_profile, Ubuntu: .profile
+Centos: .bash_profile, Ubuntu: .profile
     ```
     $ source ~/.bash_profile
     ```
@@ -121,7 +121,7 @@
     $ sudo yum install python-pip
     ```
 3. install python36 and tools
-    - CentOS7: python36u, Ubutu18.04: python3
+CentOS7: python36u, Ubutu18.04: python3
     ```
     $ sudo yum -y install python36u
     $ sudo yum -y install python36u-devel
