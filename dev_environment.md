@@ -85,6 +85,10 @@
     ```
 
 #### Install Ant
+0. You can just install ant with apt on Ubuntu18.04
+    ```
+    $ sudo apt install ant
+    ```
 1. goto ant webpage(https://ant.apache.org), and download the binary install file
 2. copy to /opt, and unzip the file
     ```
@@ -101,6 +105,7 @@
     ```
     
 #### Update Source
+    - Centos: .bash_profile, Ubuntu: .profile
     ```
     $ source ~/.bash_profile
     ```
@@ -116,6 +121,7 @@
     $ sudo yum install python-pip
     ```
 3. install python36 and tools
+    - CentOS7: python36u, Ubutu18.04: python3
     ```
     $ sudo yum -y install python36u
     $ sudo yum -y install python36u-devel
