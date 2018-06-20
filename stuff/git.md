@@ -1,3 +1,4 @@
+```
 git init
 git config --global user.name ""
 git config --global user.email xx@.com
@@ -6,3 +7,4 @@ git pull origin master
 git add xx
 git commit -m ""
 git push origin master
+```
