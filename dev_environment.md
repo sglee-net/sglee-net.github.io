@@ -49,6 +49,10 @@
  *** after update and upgrade, do step.0 process again
 
 #### Install Cmake
+0. install curl-devel zlib-devel (the cmake with Https support is needed for installing opencv) 
+    ```
+    sudo yum -y install curl-devel zlib-devel
+    ```
 1. goto https://cmake.org, and download the latest stable install file
 2. tar -zxvf cmake-xxxversionxxx.tar.gz
 3. cd cmake-xxxversionxxx
