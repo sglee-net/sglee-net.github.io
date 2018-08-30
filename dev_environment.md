@@ -156,7 +156,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     $ sudo yum install git pkgconfig (they might be installed)
     $ sudo yum install libpng-devel libjpeg-turbo-devel jasper-devel openexr-devel libtiff-devel libwebp-devel (to support various image format)
     $ sudo yum install libdc1394-devel libv4l-devel (for video format)
-    $ sudo yum install gstreamer-dev gstreamer-plugins-base-devel gstreamer1-dev gstreamer-plugins-base-devel 
+    $ sudo yum install gstreamer-dev gstreamer-plugins-base-devel gstreamer1-dev gstreamer1-plugins-base-devel 
     $ sudo yum install tbb-devel eigen3-devel
     $ sudo yum install elel-release (might be installed in the environment setting step)
     $ sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm 
@@ -167,7 +167,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
 3. install opencv-contrib (you can use xfeature2 with opencv_contrib version), https://github.com/opencv/opencv_contrib
     ```
     $ cd <opencv_build_directory>
-    $ cmake -DOPENCV_EXTRA_MODULES_PATH=<opencv_contrib>/modules <opencv_source_directory>
+    $ cmake -DOPENCV_EXTRA_MODULES_PATH=<opencv_contrib>/modules <opencv_source_directory> -DOPENCV_ENABLE_NONFREE=ON
     $ make -j5
     $ sudo make install
     ```
