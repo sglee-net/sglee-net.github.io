@@ -148,9 +148,10 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
 1. install additional packages for opencv (CentOS, check the newest way)
     ```
     $ sudo yum install curl-devel zlib-devel
-    $ sudo yum install git pkgconfig (they maybe already installed)
+    $ sudo yum install git pkgconfig (they might be installed)
     $ sudo yum install libpng-devel libjpeg-turbo-devel jasper-devel openexr-devel libtiff-devel libwebp-devel (to support various image format)
-    $ sudo yum install libdc1394-devel libv4l-devel gstreamer-plugins-base-devel (for video format)
+    $ sudo yum install libdc1394-devel libv4l-devel (for video format)
+    $ sudo yum install gstreamer-dev gstreamer-plugins-base-devel 
     $ sudo yum install tbb-devel eigen3-devel
     $ sudo yum install elel-release (might be installed in the environment setting step)
     $ sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm 
@@ -168,7 +169,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
 #### Install Boost and Thrift
 1. install additional packages for thrift
     ```
-    $ sudo yum install wget autoconf automake bison (maybe already installed)
+    $ sudo yum install wget autoconf automake bison (might be installed)
     $ sudo yum install libevent-devel
     $ sudo yum install zlib-devel
     $ sudo yum install openssl-devel
