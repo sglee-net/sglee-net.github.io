@@ -145,7 +145,7 @@
     $ sudo yum install git pkgconfig (they maybe already installed)
     $ sudo yum install libpng-devel libjpeg-turbo-devel jasper-devel openexr-devel libtiff-devel libwebp-devel (to support various image format)
     $ sudo yum install libdc1394-devel libv4l-devel gstreamer-plugins-base-devel (for video format)
-    $ sudo yum install libavcodec libavformat libavutil libswscale libavresample
+    $ sudo yum install libavcodec libavformat libavutil libswscale libavresample (can not find in yum repo, but can be used in OpenCV)
     $ sudo yum install tbb-devel eigen3-devel
     ```
  * just sudo apt install libopencv-dev on Ubuntu18.04
