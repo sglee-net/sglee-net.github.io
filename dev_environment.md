@@ -147,16 +147,24 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
 #### Install OpenCV
 1. install additional packages for opencv (CentOS, check the newest way)
     ```
+    $ sudo yum install curl-devel zlib-devel
     $ sudo yum install git pkgconfig (they maybe already installed)
     $ sudo yum install libpng-devel libjpeg-turbo-devel jasper-devel openexr-devel libtiff-devel libwebp-devel (to support various image format)
     $ sudo yum install libdc1394-devel libv4l-devel gstreamer-plugins-base-devel (for video format)
-    $ sudo yum install libavcodec libavformat libavutil libswscale libavresample (can not find in yum repo, but can be used in OpenCV)
     $ sudo yum install tbb-devel eigen3-devel
-    ```
- * just sudo apt install libopencv-dev on Ubuntu18.04
-2. set virtual envirionment for opencv
-3. install opencv
+    $ sudo yum install elel-release (might be installed in the environment setting step)
+    $ sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm 
+    $ sudo yum install ffmpeg ffmpeg-dev (for libavcodec libavformat libavutil libswscale libavresample)
 
+    ```
+2. set virtual envirionment for opencv (this is not recommended)
+3. install opencv-contrib (you can use xfeature2 with opencv_contrib version), https://github.com/opencv/opencv_contrib
+    ```
+    $ cd <opencv_build_directory>
+    $ cmake -DOPENCV_EXTRA_MODULES_PATH=<opencv_contrib>/modules <opencv_source_directory>
+    $ make -j5
+    $ sudo make install
+    ```
 #### Install Boost and Thrift
 1. install additional packages for thrift
     ```
