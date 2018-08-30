@@ -50,6 +50,7 @@
 
 #### Install Cmake
 0. install curl-devel zlib-devel (the cmake with Https support is needed for installing opencv) 
+https://github.com/opencv/opencv_contrib/issues/1131
     ```
     sudo yum -y install curl-devel zlib-devel
     ```
