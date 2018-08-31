@@ -164,6 +164,14 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
 
     ```
 2. set virtual envirionment for opencv (this is not recommended)
+3. prepair install file
+    ```
+    $ mkdir opencv
+    $ cd opencv
+    $ git clone https://github.com/opencv/opencv_contrib.git
+    $ git clone https://github.com/opencv/opencv.git
+    $ mkdir build (this is <opencv_build_derectory> as the below)
+    ```
 3. install opencv-contrib (you can use xfeature2 with opencv_contrib version), https://github.com/opencv/opencv_contrib
     ```
     $ cd <opencv_build_directory>
