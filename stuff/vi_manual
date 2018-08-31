@@ -21,7 +21,7 @@ Visual Block (Shift + V)
 Visual Block (Shift + V)
 :
 :'<, '> (auto)
-:'<, '> norm 2# (#: 1 for //, 2 for #, # means the the number of character to be removed)
+:'<, '> norm #x (#: 2 for //, 1 for #, # means the the number of character to be removed)
 
 [copy multi-line(#,#) to buffer]
 :#,#/y
