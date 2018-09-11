@@ -44,4 +44,8 @@ B
 [delete the word]
 v => w => d or x
 
-
+[copy lines from the other file and paste it to the current file]
+:e theotherfilename
+yy (:#,#/y or ctrl+v)
+ctrl ^ (*: back to the current file)
+p
