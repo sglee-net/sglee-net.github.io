@@ -49,6 +49,10 @@
     ```
     $ sudo yum groupinstall "Development Tools" "Development Libraries"
     ```
+    For Ubuntu,
+    ```
+    $ sudo apt install build-essential
+    ```
  *** important ***
  *** after update and upgrade, do step.0 process again
 
@@ -56,7 +60,11 @@
 0. install curl-devel zlib-devel (the cmake with Https support is needed for installing opencv) 
 https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and ./bootstrap --system-curl. from the version of Cmake-3.12, --system-curls might be not needed for Https support)
     ```
-    sudo yum -y install curl-devel zlib-devel
+    $ sudo yum -y install curl-devel zlib-devel
+    ```
+    For Ubuntu,
+    ```
+    $ sudo apt install libcurl4-openssl-dev zlib1g-dev
     ```
 1. goto https://cmake.org, and download the latest stable install file
 2. tar -zxvf cmake-xxxversionxxx.tar.gz
