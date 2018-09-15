@@ -198,7 +198,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     ```
     For Ubuntu,
     ```
-    $ sudo apt install wget autoconf automake bison
+    $ sudo apt install wget autoconf automake bison (flex?)
     $ sudo apt install libevent-dev zlib1g-dev libcur4-openssl-dev
     $ sudo apt install libtool
     $ sudo apt install pkg-config curl flex
@@ -218,10 +218,10 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     ```
 5. install thrift
     ```
-    $ git clone https://git-wip-us.apache.org/repos/asf/thrift.git (https://github.com/apache/thrift)
+    $ git clone https://github.com/apache/thrift
     $ cd thrift
     $ ./bootstrap.sh
-    $ ./configure (check option, https://github.com/apache/thrift)
+    $ ./configure
     $ make
     $ sudo make install
     ```
