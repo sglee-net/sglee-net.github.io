@@ -177,10 +177,13 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     $ sudo apt install libcurl4-gnutls-dev libcurl4-openssl-dev
     $ sudo apt install libgtk-3-dev libgtk2.0-dev
     $ sudo apt install libpng-dev libjpeg-dev libjpeg-turbo8-dev libtiff-dev libwebp-dev
-    $ sudo apt install libdc1394-22-dev libv4l-dev libavcodec-dev libavformat-dev
-    $ sudo apt-get install libxvidcore-dev libx264-dev
+    $ sudo apt install libdc1394-22-dev libv4l-dev 
+    $ sudo apt install libavcodec-dev libavformat-dev ***
+    $ sudo apt-get install libxvidcore-dev libx264-dev ***
     $ sudo apt-get install gstreamer1.0-opencv
+    $ sudo apt install libtbb-dev libeigen3-dev
     $ sudo apt-get install ffmpeg libswscale-dev
+    $ sudo apt-get install libatlas-base-dev gfortran ***
     ```
 2. set virtual envirionment for opencv (this is not recommended)
 3. prepair install file
