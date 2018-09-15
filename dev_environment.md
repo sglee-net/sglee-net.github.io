@@ -71,7 +71,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
 3. cd cmake-xxxversionxxx
 4. install
     ```
-    $ ./bootstrap 
+    $ ./bootstrap --system-curl
     $ sudo make
     $ sudo make install
     ```
