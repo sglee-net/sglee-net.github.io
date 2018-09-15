@@ -190,7 +190,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
 #### Install Boost and Thrift
 1. install additional packages for thrift
     ```
-    $ sudo yum install wget autoconf automake bison (might be installed)
+    $ sudo yum install wget autoconf automake bison (might be installed) (flex?)
     $ sudo yum install libevent-devel
     $ sudo yum install zlib-devel
     $ sudo yum install openssl-devel
@@ -198,7 +198,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     ```
     For Ubuntu,
     ```
-    $ sudo apt install wget autoconf automake bison (flex?)
+    $ sudo apt install wget autoconf automake bison
     $ sudo apt install libevent-dev zlib1g-dev libcur4-openssl-dev
     $ sudo apt install libtool
     $ sudo apt install pkg-config curl flex
