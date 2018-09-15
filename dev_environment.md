@@ -208,7 +208,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
 4. install boost
     ```
     $ cd boost_1_6xx
-    $ sudo ./booststrap.sh
+    $ sudo ./bootstrap.sh
     $ sudo ./b2 install
     ```
 5. install thrift
