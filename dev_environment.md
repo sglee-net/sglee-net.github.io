@@ -201,7 +201,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     $ sudo apt install wget autoconf automake bison
     $ sudo apt install libevent-dev zlib1g-dev libcur4-openssl-dev
     $ sudo apt install libtool
-    $ sudo apt install pkg-config curl
+    $ sudo apt install pkg-config curl flex
     $ sudo apt install nodejs
     $ sudo apt install npm
     ```
