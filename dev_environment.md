@@ -171,6 +171,11 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     $ sudo yum install ffmpeg ffmpeg-dev (for libavcodec libavformat libavutil libswscale libavresample)
 
     ```
+    For Ubuntu,
+    ```
+    $ sudo apt install libcurl4-gnutls-dev libcurl4-openssl-dev
+    $ sudo apt install libgtk-3-dev libgtk2.0-dev
+    ```
 2. set virtual envirionment for opencv (this is not recommended)
 3. prepair install file
     ```
@@ -199,7 +204,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     For Ubuntu,
     ```
     $ sudo apt install wget autoconf automake bison
-    $ sudo apt install libevent-dev zlib1g-dev libcur4-openssl-dev
+    $ sudo apt install libevent-dev zlib1g-dev libcurl4-openssl-dev
     $ sudo apt install libtool
     $ sudo apt install pkg-config curl flex
     $ sudo apt install nodejs
