@@ -195,6 +195,11 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     $ sudo yum install zlib-devel
     $ sudo yum install openssl-devel
     ```
+    For Ubuntu,
+    ```
+    $ sudo apt install wget autoconf automake bison
+    $ sudo apt install libevent-dev zlib1g-dev libcur4-openssl-dev
+    ```
 2. go to the boost site (http://www.boost.org), and download the install file
 3. unzip the downloaed file
     ```
