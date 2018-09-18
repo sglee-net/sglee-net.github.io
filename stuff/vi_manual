@@ -24,7 +24,7 @@ Visual Block (Shift + V)
 :'<, '> norm #x (#: 2 for //, 1 for #, # means the the number of character to be removed)
 
 [copy multi-line(#,#) to buffer]
-:#,#/y
+:#,#y
 
 [paste buffer to the next of the specific line(#)]
 :#pu
@@ -46,6 +46,6 @@ v => w => d or x
 
 [copy lines from the other file and paste it to the current file]
 :e theotherfilename
-yy (:#,#/y or ctrl+v)
+yy (or :#,#y)
 ctrl ^ (*: back to the current file)
 p
