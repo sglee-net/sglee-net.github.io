@@ -1,10 +1,10 @@
-**** Client
+Client
 ```
 $$$ ssh-keygen -t ecdsa -f ~/.ssh/id_ecdsa -b 521
 $$$ ssh-copy-id -i ~/.ssh/id_ecdsa id@address
 ```
 
-**** Sever
+Sever
 ```
 $ sudo vi sshd_config
   modify sshd_config
@@ -12,7 +12,8 @@ $ sudo vi sshd_config
    - PasswordAuthentification no
 $ sudo systemctl restart sshd.service
 ```
-**** Client
+
+Client
 ```
 $ ssh -i ~/.ssh/id_ecdsa id@address
 $ ssh id@address (server: PubKeyAuth yes)
