@@ -1,7 +1,7 @@
 Client
 ```
-$$$ ssh-keygen -t ecdsa -f ~/.ssh/id_ecdsa -b 521
-$$$ ssh-copy-id -i ~/.ssh/id_ecdsa id@address
+$ ssh-keygen -t ecdsa -f ~/.ssh/id_ecdsa -b 521
+$ ssh-copy-id -i ~/.ssh/id_ecdsa id@address
 ```
 
 Sever
