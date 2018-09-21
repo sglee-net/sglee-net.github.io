@@ -6,7 +6,7 @@ $ ssh-copy-id -i ~/.ssh/id_ecdsa id@address
 
 Sever
 ```
-$ sudo vi sshd_config
+$ sudo vi /etc/ssh/sshd_config
   modify sshd_config
    - PubKeyAuthentification yes
    - PasswordAuthentification no
