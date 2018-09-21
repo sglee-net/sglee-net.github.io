@@ -1,16 +1,17 @@
+Sever
+```
+$ sudo vi /etc/ssh/sshd_config
+$ sudo systemctl restart sshd.service
+```
+```
+PubKeyAuthentification yes
+# PasswordAuthentification no
+```
+
 Client
 ```
 $ ssh-keygen -t ecdsa -f ~/.ssh/id_ecdsa -b 521
 $ ssh-copy-id -i ~/.ssh/id_ecdsa id@address
-```
-
-Sever
-```
-$ sudo vi /etc/ssh/sshd_config
-  modify sshd_config
-   - PubKeyAuthentification yes
-   - PasswordAuthentification no
-$ sudo systemctl restart sshd.service
 ```
 
 Client
