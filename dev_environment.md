@@ -52,7 +52,7 @@
     For Ubuntu,
     ```
     $ sudo apt install build-essential
-    $ sudo apt install ubuntu-restricted-extra (to intall extra media codecs)
+    $ sudo apt install ubuntu-restricted-extras (to intall extra media codecs)
     ```
  *** important ***
  *** after update and upgrade, do step.0 process again
