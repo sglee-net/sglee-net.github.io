@@ -15,5 +15,5 @@ git commit -m ""
 git checkout develop
 git merge feature/topic
 git fetch origin
-git reset // 
+git reset // git add 취소
 ```
