@@ -9,7 +9,7 @@ git commit -m ""
 git push origin master
 git checkout -b develop // 원격저장소, local 모두 존재하지 않는 
 git checkout -b feature/subject
-git checkout -d branch_name // local 저장소 branch 삭제
+git branch -d branch_name // delete a local git branch
 git push <remote name> --delete <branch name> // delete a remote git branch
 git push origin --delete branch_name
 git fetch // update branch
