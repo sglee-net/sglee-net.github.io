@@ -49,3 +49,12 @@ v => w => d or x
 yy (or :#,#y)
 ctrl ^ (*: back to the current file)
 p
+
+[indent/outdent]
+Visual Block (Shift + V)
+< 
+>
+
+[auto alignment]
+Visual Block (Shift + V)
+=
