@@ -21,3 +21,5 @@ git fetch origin
 git reset // git add 취소
 git log --graph --all --decorate --oneline // git history
 ```
+
+https://gist.github.com/heiswayi/350e2afda8cece810c0f6116dadbe651
