@@ -1,3 +1,3 @@
 # Architecture
 ## The next FDC (Fault Detection Classification)
-![image](https://user-images.githubusercontent.com/33934527/53374677-57122880-399c-11e9-95d0-b55a9b43b58d.png)
+![image](https://user-images.githubusercontent.com/33934527/53374725-86289a00-399c-11e9-9185-f65c870b983c.png)
