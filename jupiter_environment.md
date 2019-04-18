@@ -12,7 +12,7 @@ $jupiter notebook
 ```
 
 ## 3. Run Jupiter as a service
-make a service file
+### make a service file
 ```
 $cd /etc/systemd/system
 $vi jupyter.service
