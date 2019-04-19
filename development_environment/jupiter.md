@@ -50,8 +50,8 @@ jupyter notebook --config /opt/jupyter/jupyter_notebook_config.py
 ### make a config file and copy it to the installation folder
 ```
 $cd ~/
-$jupyter notebool --generate-config
-$sudo cp ./jupyter_notebook_config.py /opt/jupyter
+$jupyter notebook --generate-config
+$sudo cp ./.jupyter/jupyter_notebook_config.py /opt/jupyter
 ```
 ### modify Jupiter configuration
 ```
