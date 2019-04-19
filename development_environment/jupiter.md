@@ -96,7 +96,7 @@ $deactivate
 https://tech.songyunseop.com/post/2016/09/using-jupyter-inside-virtualenv/
 ### check Jupiter path
 ```
-jupyter notebook --paths
+jupyter --paths
 config:
 ...
 data:
