@@ -53,6 +53,17 @@ $cd ~/
 $jupyter notebool --generate-config
 $sudo cp ./jupyter_notebook_config.py /opt/jupyter
 ```
+### modify Jupiter configuration
+```
+$cd /opt/jupyter
+$sudo vi jupyter_notebook_config.py
+```
+jupyter_notebook_config.py
+```
+c.NotebookApp.ip = 'your ip'
+c.NotebookApp.port_retries = your port
+```
+https://goodtogreate.tistory.com/entry/IPython-Notebook-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95
 ### register the jupyter.service and check status
 ```
 $cd /etc/systemd/system/
@@ -61,4 +72,50 @@ $sudo systemctl enable jupyter.service
 $sudo systemctl start jupyter
 $sudo systemctl status jupyter
 $sudo journalctl -f -u jupyter
+```
+
+## 4. Make Jupyter Kernel based on VirtualEnv
+### install virtualenv and set environment
+```
+$sudo apt install pip3 python3-dev
+$pip3 install --user virtualenv
+$cd ~/
+$mkdir virtualenvs
+$cd virtualenvs
+$virtualenv --python=python3.6 your_virtualenv_name
+```
+### run virtualenv, install 'ipykernel' to use Jupyter kernel and quit
+```
+$source ./your_virtualenv_name/bin/activate
+$pip3 install ipykernel
+...
+$which python3
+/home/your_id/virtualenvs/your_virtialenv_name/bin/python3 (important!!)
+$deactivate
+```
+https://tech.songyunseop.com/post/2016/09/using-jupyter-inside-virtualenv/
+### check Jupiter path
+```
+jupyter notebook --paths
+config:
+...
+data:
+  /home/your_id/.local/share/jupyter
+```
+### make kernel.json
+```
+$mkdir ~/.local/share/jupyter/kernels/kernel_name
+$vi ~/.local/share/jupyter/kernels/kernel_name/kernel.json
+```
+kernel.json
+```
+{
+"argv": ["/home/your_id/virtualenvs/your_virtualenv_name/bin/python3.6", "-m", "ipykernel", "-f", "{connection_file}"],
+"display_name":"kernel_name",
+"language":"python3"
+}
+```
+### restart Jupyter service
+```
+$sudo systemctl restart jupyter
 ```
