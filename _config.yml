@@ -110,8 +110,8 @@ author:
   avatar           : #"/assets/images/sg.jpg"
   bio              : #"Data Scientist"
   location         : #"Sungnam, South Korea"
-  email            : #
-  links:#
+  email            : 
+  links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your.name@email.com
