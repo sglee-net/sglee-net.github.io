@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "SG Lee"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : #"/assets/images/bio-photo.jpg"
   bio              : "Data Scientist"
   location         : "Sungnam, South Korea"
   email            :
