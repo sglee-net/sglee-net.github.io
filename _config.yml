@@ -23,7 +23,7 @@ description              : "Technical Blog"
 url                      : "https://sglee-net.github.io"
 baseurl                  : #"/"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/500x300.jpg"
+teaser                   : #"/assets/images/500x300.jpg"
 logo                     : #"/assets/images/logo.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
