@@ -11,8 +11,8 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
- - title: "Intro"
-   url: /intro/
+ - title: "Introduction"
+   url: /introduction/
  - title: "Programming"
    url: /programming/
  - title: "Machine Learning"
