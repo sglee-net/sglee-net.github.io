@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Main"
+title                    : "Home"
 title_separator          : "-"
 name                     : "SG Lee"
 description              : "Technical Blog"
@@ -106,7 +106,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "SG Lee"
+  name             : #"SG Lee"
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Data Scientist"
   location         : "Sungnam, South Korea"
@@ -288,8 +288,8 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: #true
       read_time: true
       comments: # true
-      share: true
-      related: true
+      share: #true
+      related: #true
