@@ -80,10 +80,11 @@ $sudo journalctl -f -u jupyter
 ### install virtualenv and set environment
 ```
 $sudo apt install pip3 python3-dev
-$pip3 install --user virtualenv
+$pip3 install (--user) virtualenv (option)
 $cd ~/
 $mkdir virtualenvs
 $cd virtualenvs
+$source .profile (if path is not updated)
 $virtualenv --python=python3.6 your_virtualenv_name
 ```
 ### run virtualenv, install 'ipykernel' to use Jupyter kernel and quit
