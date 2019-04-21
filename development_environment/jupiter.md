@@ -11,7 +11,7 @@ $sudo apt install jupyter
 $jupiter notebook
 ```
 
-## 3. Run Jupiter as a service
+## 3. Run Jupyter as a service
 ### make a service file
 ```
 $cd /etc/systemd/system
@@ -53,7 +53,7 @@ $cd ~/
 $jupyter notebook --generate-config
 $sudo cp ./.jupyter/jupyter_notebook_config.py /opt/jupyter
 ```
-### modify Jupiter configuration
+### modify Jupyter configuration
 ```
 $cd /opt/jupyter
 $sudo vi jupyter_notebook_config.py
@@ -94,7 +94,7 @@ $which python3
 $deactivate
 ```
 https://tech.songyunseop.com/post/2016/09/using-jupyter-inside-virtualenv/
-### check Jupiter path
+### check Jupyter path
 ```
 jupyter --paths
 config:
