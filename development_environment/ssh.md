@@ -1,5 +1,11 @@
 # Setting for SSH server and client
 
+## Server
+```
+$sudo apt update
+$sudo apt install openssl-server
+```
+
 ## Client
 ```
 $ssh-keygen -t ecdsa -f ~/.ssh/id_ecdsa -b 521
