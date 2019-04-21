@@ -5,9 +5,9 @@
 $sudo apt install python3
 ```
 
-## 2. Install Jupiter
+## 2. Install Jupyter
 ```
-$sudo apt install Jupiter
+$sudo apt install jupyter
 $jupiter notebook
 ```
 
