@@ -62,6 +62,7 @@ jupyter_notebook_config.py
 ```
 c.NotebookApp.ip = 'your ip'
 c.NotebookApp.open_browser = False
+c.NotebookApp.password = u'sha1:...'
 c.NotebookApp.port_retries = your port
 ```
 https://goodtogreate.tistory.com/entry/IPython-Notebook-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95
