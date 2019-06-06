@@ -77,6 +77,7 @@ $sudo journalctl -f -u jupyter
 ```
 
 ## 4. Make Jupyter Kernel based on VirtualEnv
+https://wsvincent.com/install-python3-mac/
 ### install virtualenv and set environment
 ```
 $sudo apt install pip3 python3-dev
