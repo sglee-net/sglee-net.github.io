@@ -160,13 +160,13 @@ Copy the outcoming secret key
 $kubectl get secret $(kubectl get serviceaccount dashboard -o jsonpath="{.secrets[0].name}") -o jsonpath="{.data.token}" | base64 --decode
 ```
 
-Show Kubernetes dashboard
+Show Kubernetes dashboard : 
 http://localhost:8001
 
 Kubernetes login
 http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
 
-Token login
+Token login : 
 Paste the secret key in UI
 
 ## Slave Installation
