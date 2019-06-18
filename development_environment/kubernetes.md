@@ -163,7 +163,7 @@ $kubectl get secret $(kubectl get serviceaccount dashboard -o jsonpath="{.secret
 Show Kubernetes dashboard : 
 http://localhost:8001
 
-Kubernetes login
+Kubernetes login : 
 http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
 
 Token login : 
