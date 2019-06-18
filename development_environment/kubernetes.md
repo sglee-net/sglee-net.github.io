@@ -95,7 +95,7 @@ $exit
 
 ### Initiate Kubernetes cluster
 On Master
-``
+```
 $sudo kubeadm init --pod-network-cidr=<> --apiserver-advertise-address=<ip-address-of-master>
 ```
 For starting a Calico CNI: 192.168.0.0/16 For starting a Flannel CNI: 10.244.0.0/16
