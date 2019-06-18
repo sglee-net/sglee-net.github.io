@@ -1,10 +1,16 @@
-# Preparation for master & slave
-## Update repository
+# Kubernetes Installation
+Reference: https://www.youtube.com/watch?time_continue=107&v=UWg3ORRRF60
+
+## Preparation for master & slave
+
+### Swapoff
+
+// Update repository
 ```
 $sudo apt update
 ```
 
-## Turn off swap space
+// Turn off swap space
 ```
 $sudo swapoff -a
 ```
@@ -16,7 +22,7 @@ $sudo vi /etc/fstab
 // add comment in front of the below line 
 #/swapfile	none	swap	sw	0	0
 
-## Update hostname, hosts and set static IP
+### Update hostname, hosts and set static IP
 // change host name to kmaster
 ```
 $sudo vi /etc/hostname
@@ -47,7 +53,7 @@ $sudo vi /etc/hosts
 <ip-address>  kmaster
 <ip_address>  knode
  
-## Install OpenSSH server and Docker
+### Install OpenSSH server and Docker
 ```
 $sudo apt install openssh-server
 $sudo apt install -y docker.io
@@ -56,7 +62,7 @@ $sudo start docker
 $sudo usermod -aG docker <your-id>
 ```
 
-## Install kubeadmin, kubelet, and kubectl
+### Install kubeadmin, kubelet, and kubectl
 ```
 $sudo apt update
 $sudo apt install -y apt-transport-https curl
@@ -80,9 +86,9 @@ Environment="cgroup-driver=systemd/cgroup-driver=cgroupfs"
 $exit
 ```
 
-# Master Installation
+## Master Installation
 
-## Initiate Kubernetes cluster
+### Initiate Kubernetes cluster
 // On Master
 ```
 $sudo kubeadm init --pod-network-cidr=<> --apiserver-advertise-address=<ip-address-of-master>
@@ -96,7 +102,7 @@ kubeadm join 192.168.1.48:6443 --token l3bmdu.y0i0yvnsbfx9ndx9 \
    --discovery-token-ca-cert-hash sha256:483764b6e9deadd519bff62e3f597925851f4656c39e16a4821768645f88351c
 ```
 
-## Install the Pod networks
+### Install the Pod networks
 
 // To start using your cluster, you need to run the following as a regular user
 ```
@@ -117,7 +123,7 @@ $kubectl get pods -o wide --all-namespaces
 $kubectl get pods --all-namespaces
 ```
 
-## Setup the Kubernetes dashboard
+### Setup the Kubernetes dashboard
 // For creating the dashboard first - bring this up before starting Nodes
 ```
 $kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml
@@ -155,10 +161,11 @@ http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-da
 // Token login
 Paste the secret key
 
-# Slave Installation
+## Slave Installation
 
-## Join the cluster
-Join the cluster with the sentence you kept after run "kubeadm init"
+### Join the cluster
+// Join the cluster with the sentence you kept after run "kubeadm init"
 ```
 $sudo kubeadm join <master-ip:port> --token <> --discovery-token-ca-cert-hash <hash>
+```
 
