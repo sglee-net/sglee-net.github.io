@@ -58,6 +58,13 @@ $git merge feature/topic
 ## request pull
 ```
 $git fetch origin
+$git pull origin develop
+$git checkout -b feature/topic
+// make codes
+// ...
+$git add --all
+$git commit -m "<message>"
+$git push origin feature/topic
 
 // request pull
 // ...
