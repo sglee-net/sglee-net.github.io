@@ -6,12 +6,13 @@ git init
 git config --global user.name "***"
 git config --global user.email ***@.com
 git remote add origin https://github.com/***.git
-git pull origin master
+git fetch origin
+git pull origin master (develop, feature/topic)
 git add ***
 // to all files
 git add --
 git commit -m "***"
-git push origin master
+git push origin master (develop, feature/topic)
 ```
 ## make branch and checkout
 ```
@@ -36,7 +37,7 @@ git remote add upstream <https://github.com/***.git>
 git remote -v
 ```
 
-# manage branch
+## manage branch
 ```
 // delete a local git branch
 git branch -d branch_name 
@@ -45,12 +46,15 @@ git push <remote name> --delete <branch name>
 git push origin --delete branch_name
 ```
 
-# merge branch and request pull
+## merge branch
 ```
 // merge feature/topic => develop
 git checkout develop
 git merge feature/topic
+```
 
+## request pull
+```
 git fetch origin
 
 // request pull
@@ -59,12 +63,14 @@ git fetch origin
 // update upstream repository's info.
 git fetch upstream
 // merge upstream/master to local
-git merge upstream/develop
+git merge upstream develop
+// update origin/develop with upstream data
+git push origin develop
 ```
 
 # etc
 ```
-// git add 취소
+// cancel git add
 git reset 
 // git history
 git log --graph --all --decorate --oneline 
