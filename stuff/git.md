@@ -3,28 +3,30 @@
 ## general process
 ```
 git init
-git config --global user.name "***"
-git config --global user.email ***@.com
-git remote add origin https://github.com/***.git
+git config --global user.name "<user mail>"
+git config --global user.email <user email>
+git remote add origin <repository url>
 git fetch origin
 git pull origin master (develop, feature/topic)
-git add ***
+git add <file name>
 // to all files
 git add --
-git commit -m "***"
+git commit -m "<message>"
 git push origin master (develop, feature/topic)
 ```
 ## make branch and checkout
 ```
 // first 2~6 digits are ok
-git checkout {commit_id}
-// in the case that there is no branch in remote and local repository
+git checkout <commit_id>
+
+// -b is for the new branch
+// there is no branch in remote and local repository
 git checkout -b develop
 git checkout -b feature/subject
 // update branch
 git fetch 
-// in the case of making the new branch of "develop" in a local repository
-// and tracking it that exsits in a remote repository
+// -t is for tracking
+// branch name exsists in a remote repository
 git checkout -t origin/develop 
 ```
 ## add remote repository
