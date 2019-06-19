@@ -1,24 +1,59 @@
+# git command
+
+## general process
 ```
 git init
-git config --global user.name ""
-git config --global user.email xx@.com
-git remote add origin https://github.com/xx/xx.git
+git config --global user.name "***"
+git config --global user.email ***@.com
+git remote add origin https://github.com/***.git
 git pull origin master
-git add xx
-git commit -m ""
+git add ***
+// to all files
+git add --
+git commit -m "***"
 git push origin master
-git checkout -b develop // 원격저장소, local 모두 존재하지 않는 
+```
+## checkout
+```
+// first 2~6 digits are ok
+git checkout {commit_id}
+// in the case that there is no branch in remote and local repository
+git checkout -b develop
 git checkout -b feature/subject
-git checkout {commit_id} // id 앞 6자리만 적어줘도 
-git branch -d branch_name // delete a local git branch
-git push <remote name> --delete <branch name> // delete a remote git branch
+// update branch
+git fetch 
+// in the case of making the new branch of "develop" in a local repository
+// and tracking it that exsits in a remote repository
+git checkout -t origin/develop 
+```
+
+# manage branch
+```
+// delete a local git branch
+git branch -d branch_name 
+// delete a remote git branch
+git push <remote name> --delete <branch name> 
 git push origin --delete branch_name
-git fetch // update branch
-git checkout -t origin/develop // 원격저장소/branch 이름으로 branch를 생성하면서 해당 branch trac, 원격저장소에는 존재하고 local에는 아직 존재하지 않는 경우
-git commit -m ""
+```
+
+# merge branch and request pull
+```
+// merge feature/topic => develop
 git checkout develop
 git merge feature/topic
+
 git fetch origin
+
+// check remote
+git remote -v
+// add remote origin
+git remote add orogin <https://github.com/***.git>
+// add remote upstream (usually original repository before fork)
+git remote add upstream <https://github.com/***.git>
+```
+
+# etc
+```
 git reset // git add 취소
 git log --graph --all --decorate --oneline // git history
 ```
