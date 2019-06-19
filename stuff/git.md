@@ -70,7 +70,7 @@ $git merge upstream develop
 $git push origin develop
 ```
 
-# etc
+## etc
 ```
 // cancel git add
 $git reset 
