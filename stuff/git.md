@@ -60,8 +60,12 @@ $git merge feature/topic
 $git fetch origin
 $git pull origin develop
 $git checkout -b feature/topic
+// do not merge feature/topic to develop
+
 // make codes
 // ...
+
+// add, commit, push
 $git add --all
 $git commit -m "<message>"
 $git push origin feature/topic
@@ -75,6 +79,8 @@ $git fetch upstream
 $git merge upstream develop
 // update origin/develop with upstream data
 $git push origin develop
+
+$git branch -D feature/topic
 ```
 
 ## etc
