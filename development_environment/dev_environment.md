@@ -27,6 +27,12 @@
     ```
 7. reboot and install driver again
 
+#### Install Nvidia driver (Ubuntu 18.04v2)
+1. add ppa:graphics-drivers/ppa
+    ```
+    $sudo add-apt-repository ppa:graphics-drivers/ppa
+    ```
+
 #### Update Repository
 1. update yum 
     ```
