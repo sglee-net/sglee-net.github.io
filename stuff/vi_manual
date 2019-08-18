@@ -58,3 +58,14 @@ Visual Block (Shift + V)
 [auto alignment]
 Visual Block (Shift + V)
 =
+
+[backward page]
+ctrl b
+[forward page]
+ctrl f
+
+[begin page]
+gg
+
+[end page]
+G
