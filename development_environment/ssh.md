@@ -3,7 +3,7 @@
 ## Server
 ```
 $sudo apt update
-$sudo apt install openssl-server
+$sudo apt install openssh-server
 ```
 
 ## Client
