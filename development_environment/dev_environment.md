@@ -207,7 +207,7 @@ $deactivate
     $ sudo yum install libdc1394-devel libv4l-devel (for video format)
     $ sudo yum install gstreamer-dev gstreamer-plugins-base-devel gstreamer1-dev gstreamer1-plugins-base-devel 
     $ sudo yum install tbb-devel eigen3-devel
-    $ sudo yum install elel-release (might be installed in the environment setting step)
+    $ sudo yum install epel-release (might be installed in the environment setting step)
     $ sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm 
     $ sudo yum install ffmpeg ffmpeg-dev (for libavcodec libavformat libavutil libswscale libavresample)
 
