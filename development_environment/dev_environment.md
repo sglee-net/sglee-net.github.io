@@ -292,6 +292,10 @@ LANGUAGE="en_US.UTF-8"
     $ make
     $ sudo make install
     ```
+    
+    The default ruby version of CentOS is 2.0, but thrift 0.12 needs over 2.3.
+    It is not easy to install ruby 2.3 with other libraries, such as bundler...
+    So, I recommend --without-ruby
     If you meet bundler version problem (version down could be needed) during make, uninstall bundler and reinstall
     ```
     $ gem uninstall bundler
