@@ -292,3 +292,8 @@ LANGUAGE="en_US.UTF-8"
     $ make
     $ sudo make install
     ```
+    If you meet bundler version problem (version down could be needed) during make, uninstall bundler and reinstall
+    ```
+    $ gem uninstall bundler
+    $ gem install bundler --version '1.11'
+    ```
