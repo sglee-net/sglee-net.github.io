@@ -288,7 +288,7 @@ LANGUAGE="en_US.UTF-8"
     $ git clone https://github.com/apache/thrift
     $ cd thrift
     $ ./bootstrap.sh
-    $ ./configure (--with-boost=/opt/boost)
+    $ ./configure --with-boost=/opt/boost --without-ruby --without-lua
     $ make
     $ sudo make install
     ```
