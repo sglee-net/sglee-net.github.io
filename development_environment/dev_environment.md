@@ -201,7 +201,7 @@ $deactivate
 1. install additional packages for opencv (CentOS, check the newest way)
     ```
     $ sudo yum install curl-devel zlib-devel
-    $ sudo yum gtk+-devel gtk2-devel gtk3-devel
+    $ sudo yum install gtk+-devel gtk2-devel gtk3-devel
     $ sudo yum install git pkgconfig (they might be installed)
     $ sudo yum install libpng-devel libjpeg-turbo-devel jasper-devel openexr-devel libtiff-devel libwebp-devel (to support various image format)
     $ sudo yum install libdc1394-devel libv4l-devel (for video format)
