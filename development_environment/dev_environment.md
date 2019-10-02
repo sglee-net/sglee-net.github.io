@@ -125,16 +125,17 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     ```
 
 #### Install Ant
-0. You can just install ant with apt on Ubuntu18.04
-    ```
-    $ sudo apt install ant
-    ```
 1. goto ant webpage(https://ant.apache.org), and download the binary install file
 2. copy to /opt, and unzip the file
     ```
     $ sudo cp ~/Downloads/apache-ant-xxx.tar.gz /opt/
     $ cd opt
     $ sudo tar -zxvf apahce-ant-xxx.tar.gz
+    ```
+    For Ubuntu,
+    You can just install ant with apt on Ubuntu18.04. Check the installed path if you use apt.
+    ```
+    $ sudo apt install ant
     ```
 3. make the link, and update environment
     ```
@@ -174,6 +175,27 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     $ python3.6 --version (check the version of python3x)
     $ sudo pip3.6 install numpy (this is for version 3.6x)
     ```
+#### Install Virtual Envirionment
+https://wsvincent.com/install-python3-mac/
+##### install virtualenv and set environment
+```
+$sudo apt install pip3 python3-dev
+$pip3 install (--user) virtualenv (option)
+$cd ~/
+$mkdir virtualenvs
+$cd virtualenvs
+$source .profile (if path is not updated)
+$virtualenv --python=python3.6 your_virtualenv_name
+```
+##### run virtualenv
+```
+$source ./your_virtualenv_name/bin/activate
+$pip3 install ...
+...
+$which python3
+/home/your_id/virtualenvs/your_virtialenv_name/bin/python3 (important!!)
+$deactivate
+```
 
 #### Install OpenCV
 1. install additional packages for opencv (CentOS, check the newest way)
@@ -206,7 +228,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     $ sudo apt install libatlas-base-dev gfortran ***
     $ sudo apt install libgoogle-glog-dev
     ```
-2. set virtual envirionment for opencv (this is not recommended)
+2. set virtual envirionment for opencv
 3. prepair install file
     ```
     $ mkdir opencv
