@@ -276,11 +276,11 @@ LANGUAGE="en_US.UTF-8"
     ```
     $ tar -zxvf boost_1_6xx.tar.gz
     ```
-4. install boost
+4. install boost with test
     ```
     $ cd boost_1_6xx
     $ sudo ./bootstrap.sh
-    $ sudo ./b2 install
+    $ sudo ./b2 --with-test --prefix=$boost_installation_prefix install
     ```
 5. install thrift
     ```
