@@ -281,14 +281,14 @@ LANGUAGE="en_US.UTF-8"
     $ cd boost_1_6xx
     $ sudo ./bootstrap.sh
     $ sudo ./b2 install
-    $ sudo ./b2 --with-test --prefix=/opt/boost install (building the unit test framework)
+    $ sudo ./b2 --with-test --prefix=/opt/boost install (building the unit test framework and install boost at $boost_installation_prefix)
     ```
 5. install thrift
     ```
     $ git clone https://github.com/apache/thrift
     $ cd thrift
     $ ./bootstrap.sh
-    $ ./configure (--with-boost=/usr/local)
+    $ ./configure (--with-boost=/opt/boost)
     $ make
     $ sudo make install
     ```
