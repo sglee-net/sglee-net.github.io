@@ -179,8 +179,8 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
 https://wsvincent.com/install-python3-mac/
 ##### install virtualenv and set environment
 ```
-$sudo apt install pip3 python3-dev
-$pip3 install (--user) virtualenv (option)
+$sudo apt install pip3 python3-dev (python36 for CentOS)
+$pip3 install (--userId) virtualenv (check PermissionError can be occurred without 'userId')
 $cd ~/
 $mkdir virtualenvs
 $cd virtualenvs
