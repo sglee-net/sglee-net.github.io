@@ -38,7 +38,7 @@
     ```
 3. install cuda driver
  - https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=deblocal
-    ``
+    ```
     $sudo dpkg -i cuda-repo-ubuntu1804-10-1-local-10.1.168-418.67_1.0-1_amd64.deb
     $sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub
     $sudo apt-get update
