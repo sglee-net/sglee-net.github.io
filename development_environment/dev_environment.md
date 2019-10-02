@@ -1,4 +1,5 @@
-#### Install Nvidia driver (Option for Nvidia graphic card)
+# Install Graphic driver
+## Install Nvidia driver on CentOS (Option for Nvidia graphic card)
 1. go to nvidia site and download the driver (www.nvidia.com/object/unix.html)
    * Latest Long Lived Branch version
 2. make the file executable
@@ -27,7 +28,7 @@
     ```
 7. reboot and install driver again
 
-#### Install Nvidia driver (Ubuntu 18.04v2)
+## Install Nvidia driver (Ubuntu 18.04v2)
 1. add ppa:graphics-drivers/ppa
     ```
     $sudo add-apt-repository ppa:graphics-drivers/ppa
@@ -45,7 +46,7 @@
     $sudo apt-get install cuda
     ```
 
-#### Update Repository
+# Update Repository
 1. update yum 
     ```
     $ sudo yum -y update
@@ -75,7 +76,7 @@
  *** important ***
  *** after update and upgrade, do step.0 process again
 
-#### Install Cmake
+# Install Cmake
 0. install curl-devel zlib-devel (the cmake with Https support is needed for installing opencv) 
 https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and ./bootstrap --system-curl. from the version of Cmake-3.12, --system-curls might be not needed for Https support)
     ```
@@ -95,7 +96,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     $ sudo make install
     ```
 
-#### Install Java(openjdk), and modify environment 
+# Install Java(openjdk), and modify environment 
 1. search and install openjdk
     ```
     $ yum search openjdk
@@ -108,7 +109,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     $ export JAVA_HOME
     ```
 
-#### Install Maven
+# Install Maven
 1. goto maven webpage(https://maven.apache.org), and download the binary install file
 2. copy to /opt, and unzip the file
     ```
@@ -124,7 +125,7 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     $ export PATH=$MAVEN_HOME/bin:$PATH
     ```
 
-#### Install Ant
+# Install Ant
 1. goto ant webpage(https://ant.apache.org), and download the binary install file
 2. copy to /opt, and unzip the file
     ```
@@ -145,13 +146,13 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     $ export PATH=$ANT_HOME/bin:$PATH
     ```
     
-#### Update Source
+# Update Source
  * Centos: .bash_profile, Ubuntu: .profile
     ```
     $ source ~/.bash_profile
     ```
 
-#### Install Environment(Python, other libraries) to install opencv
+# Install Environment(Python, other libraries) to install opencv
 1. upgrade and update
     ```
     $ sudo yum update
@@ -175,9 +176,9 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
     $ python3.6 --version (check the version of python3x)
     $ sudo pip3.6 install numpy (this is for version 3.6x)
     ```
-#### Install Virtual Envirionment
+# Install Virtual Envirionment
 https://wsvincent.com/install-python3-mac/
-##### install virtualenv and set environment
+## install virtualenv and set environment
 ```
 $sudo apt install pip3 python3-dev (python36 for CentOS)
 $pip3 install (--userId) virtualenv (check PermissionError can be occurred without 'userId')
@@ -187,7 +188,7 @@ $cd virtualenvs
 $source .profile (if path is not updated)
 $virtualenv --python=python3.6 your_virtualenv_name
 ```
-##### run virtualenv
+## run virtualenv
 ```
 $source ./your_virtualenv_name/bin/activate
 $pip3 install ...
@@ -197,7 +198,7 @@ $which python3
 $deactivate
 ```
 
-#### Install OpenCV
+# Install OpenCV
 1. install additional packages for opencv (CentOS, check the newest way)
     ```
     $ sudo yum install curl-devel zlib-devel
@@ -244,7 +245,7 @@ $deactivate
     $ make -j5
     $ sudo make install
     ```
-#### Install Boost and Thrift
+# Install Boost and Thrift
 1. install additional packages for thrift
     ```
     $ sudo yum install wget autoconf automake bison (might be installed) (flex?)
