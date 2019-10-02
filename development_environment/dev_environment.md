@@ -164,9 +164,9 @@ https://github.com/opencv/opencv_contrib/issues/1131 (check skvark's comment and
 3. install python36 and tools
  * CentOS7: python36u, Ubutu18.04: python3
     ```
-    $ sudo yum -y install python36u
-    $ sudo yum -y install python36u-devel
-    $ sudo yum -y install python36u-pip
+    $ sudo yum -y install python36
+    $ sudo yum -y install python36-devel
+    $ sudo yum -y install python36-pip
     ```
 4. install python packages
     ```
