@@ -245,6 +245,14 @@ $deactivate
     $ make -j5
     $ sudo make install
     ```
+# How to fix locale error
+Edit /etc/environment and add the following. Replace en_US with your actual locale if you are not using en_US:
+```
+LC_ALL="en_US.UTF-8"
+LC_CTYPE="en_US.UTF-8"
+LANGUAGE="en_US.UTF-8"
+```
+
 # Install Boost and Thrift
 1. install additional packages for thrift
     ```
