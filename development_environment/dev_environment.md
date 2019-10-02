@@ -281,7 +281,7 @@ LANGUAGE="en_US.UTF-8"
     $ cd boost_1_6xx
     $ sudo ./bootstrap.sh
     $ sudo ./b2 install
-    $ sudo ./b2 --with-test --prefix=$boost_installation_prefix install (building the unit test framework)
+    $ sudo ./b2 --with-test --prefix=/opt/boost install (building the unit test framework)
     ```
 5. install thrift
     ```
