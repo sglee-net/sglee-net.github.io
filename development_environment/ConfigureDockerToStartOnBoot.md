@@ -9,12 +9,12 @@ Docker service is already made.
 ```
 ```
   [Unit]
-  Description=Poratiner Service
+  Description=Docker Service
   Requires=docker.service
   After=docker.service
 
   [Service]
-  Type=simple
+  Type=always
   ExecStart=/opt/service/service.sh
 
   [Install]
