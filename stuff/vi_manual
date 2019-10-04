@@ -1,5 +1,3 @@
-#### Command
-
 [replacement]
 :%s/src/target/c (confirm)
 :%s/src/target/g (global)
@@ -69,3 +67,6 @@ gg
 
 [end page]
 G
+
+[write with su]
+:w !sudo tee %
