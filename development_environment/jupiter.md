@@ -25,7 +25,7 @@ Description=jupyter notebook
 [Service]
 User = user
 Group = user
-WorkingDirectory=/home/user/workspace_jupyter
+WorkingDirectory=/bin/bash /home/user/workspace_jupyter
 
 ExecStart=/opt/jupyter/jupyter.sh
 
