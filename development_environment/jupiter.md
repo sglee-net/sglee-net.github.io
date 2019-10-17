@@ -8,7 +8,7 @@ $sudo apt install python3
 ## 2. Install Jupyter
 ```
 $sudo apt install jupyter
-$jupiter notebook
+$jupyter notebook
 ```
 
 ## 3. Run Jupyter as a service
@@ -60,6 +60,7 @@ $sudo vi jupyter_notebook_config.py
 ```
 jupyter_notebook_config.py
 ```
+c.NotebookApp.notebook_dir = u'/home/user/workspace/jupyter/'
 c.NotebookApp.ip = 'your ip'
 c.NotebookApp.open_browser = False
 c.NotebookApp.password = u'sha1:...'
