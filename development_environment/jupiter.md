@@ -101,21 +101,22 @@ $deactivate
 https://tech.songyunseop.com/post/2016/09/using-jupyter-inside-virtualenv/
 ### check Jupyter path
 ```
-jupyter --paths
+$ jupyter --paths
+
 config:
 ...
 data:
-  /home/your_id/.local/share/jupyter
+  /home/<your_id>/.local/share/jupyter
 ```
 ### make kernel.json
 ```
-$mkdir ~/.local/share/jupyter/kernels/kernel_name
-$vi ~/.local/share/jupyter/kernels/kernel_name/kernel.json
+$mkdir ~/.local/share/jupyter/kernels/<kernel_name>
+$vi ~/.local/share/jupyter/kernels/<kernel_name>/kernel.json
 ```
 kernel.json
 ```
 {
-"argv": ["/home/your_id/virtualenvs/your_virtualenv_name/bin/python3.6", "-m", "ipykernel", "-f", "{connection_file}"],
+"argv": ["/home/<your_id>/virtualenvs/<your_virtualenv_name>/bin/python3.6", "-m", "ipykernel", "-f", "{connection_file}"],
 "display_name":"kernel_name",
 "language":"python3"
 }
