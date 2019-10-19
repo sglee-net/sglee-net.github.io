@@ -25,7 +25,7 @@ Description=jupyter notebook
 [Service]
 User = user
 Group = user
-WorkingDirectory=/bin/bash /home/user/workspace_jupyter
+WorkingDirectory=/bin/bash </opt/jupyter/workspace_py/>
 
 ExecStart=/opt/jupyter/jupyter.sh
 
@@ -60,7 +60,7 @@ $sudo vi jupyter_notebook_config.py
 ```
 jupyter_notebook_config.py
 ```
-c.NotebookApp.notebook_dir = u'/home/user/workspace/jupyter/'
+c.NotebookApp.notebook_dir = u'</opt/jupyter/workspace_py/>'
 c.NotebookApp.ip = 'your ip'
 c.NotebookApp.open_browser = False
 c.NotebookApp.password = u'sha1:...'
