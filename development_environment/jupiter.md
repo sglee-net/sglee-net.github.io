@@ -95,7 +95,7 @@ $source ./your_virtualenv_name/bin/activate
 $pip3 install ipykernel
 ...
 $which python3
-/home/your_id/virtualenvs/your_virtialenv_name/bin/python3 (important!!)
+/home/<your_id>/virtualenvs/<your_virtialenv_name>/bin/python3 (important!!)
 $deactivate
 ```
 https://tech.songyunseop.com/post/2016/09/using-jupyter-inside-virtualenv/
