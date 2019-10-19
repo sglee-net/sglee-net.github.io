@@ -87,7 +87,7 @@ $cd ~/
 $mkdir virtualenvs
 $cd virtualenvs
 $source .profile (if path is not updated)
-$virtualenv --python=python3.6 your_virtualenv_name
+$virtualenv --python=python3.6 <your_virtualenv_name>
 ```
 ### run virtualenv, install 'ipykernel' to use Jupyter kernel and quit
 ```
