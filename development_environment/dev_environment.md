@@ -268,8 +268,8 @@ LANGUAGE="en_US.UTF-8"
     $ sudo apt install libevent-dev zlib1g-dev libcurl4-openssl-dev
     $ sudo apt install libtool
     $ sudo apt install pkg-config curl flex
+    $ sudo apt install libssl-dev
     $ sudo apt install nodejs
-    $ sudo apt install npm
     ```
 2. go to the boost site (http://www.boost.org), and download the install file
 3. unzip the downloaed file
