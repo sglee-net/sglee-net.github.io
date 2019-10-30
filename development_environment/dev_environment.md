@@ -225,7 +225,7 @@ $deactivate
     $ sudo apt-get install gstreamer1.0-opencv libgstreamer1.0-dev 
     $ sudo apt install libtbb-dev libeigen3-dev
     $ sudo apt install ffmpeg libswscale-dev
-    $ sudo apt install libavcodec-dev libavformat-dev libavutil-dev libsescale-dev libavresample-dev
+    $ sudo apt install libavcodec-dev libavformat-dev libavutil-dev libswscale-dev libavresample-dev
     $ sudo apt install libatlas-base-dev gfortran ***
     $ sudo apt install libgoogle-glog-dev
     ```
