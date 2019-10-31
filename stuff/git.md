@@ -95,3 +95,13 @@ https://gist.github.com/heiswayi/350e2afda8cece810c0f6116dadbe651
 
 ## tag
 https://gahee0416.tistory.com/7
+
+## reset
+```
+$git reset HEAD~1
+$git reset --hard {commit id}
+```
+
+## revert
+https://jupiny.com/2019/03/19/revert-commits-in-remote-repository/
+https://victorydntmd.tistory.com/79
