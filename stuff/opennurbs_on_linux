@@ -1,0 +1,6 @@
+$ make -e CC="clang" CCC="clang++" LINKFLAGS="-luuid"
+For Ubuntu 18.04 you can install build tools/dependencies using sudo apt install make clang uuid-dev.
+
+commit id
+https://github.com/mcneel/opennurbs/commits/sbaer/temp_fix_for_py
+f64a9899765c7fe247a6111b8f061d39f907af74
